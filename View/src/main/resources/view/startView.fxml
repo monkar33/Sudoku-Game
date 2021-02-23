@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StartViewController">
+   <children>
+      <Label fx:id="titleLabel" contentDisplay="CENTER" layoutX="201.0" layoutY="14.0" text="%titleLabel" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="levelLabel" layoutX="169.0" layoutY="57.0" text="%chooseLabel" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxLevel" layoutX="191.0" layoutY="94.0" prefHeight="46.0" prefWidth="215.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+<!--               <String fx:value="Easy" />-->
+<!--               <String fx:value="Medium" />-->
+<!--               <String fx:value="Hard" />-->
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label fx:id="languageLabel" layoutX="209.0" layoutY="171.0" text="%languageLabel" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxLanguage" layoutX="191.0" layoutY="214.0" prefHeight="31.0" prefWidth="215.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+<!--               <String fx:value="Polish" />-->
+<!--               <String fx:value="English" />-->
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="reloadButton" layoutX="426.0" layoutY="208.0" mnemonicParsing="false" onAction="#buttonReloadClicked" text="%reloadButton">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="startButton" layoutX="191.0" layoutY="287.0" mnemonicParsing="false" onAction="#buttonStartGameClicked" prefHeight="58.0" prefWidth="215.0" text="%startButton">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="authorsButton" layoutX="425.0" layoutY="287.0" mnemonicParsing="false" onAction="#buttonAuthorsClicked" prefHeight="58.0" text="%authors" textAlignment="CENTER">
+          <font>
+              <Font name="Arial Black" size="20.0" />
+          </font>
+      </Button>
+   </children>
+</AnchorPane>
